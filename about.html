@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>|| SwiftCart | About ||</title>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">SwiftCart</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Services </a>
+      <ul class="dropdown-menu">
+        <li><a href="t&sman.html">Man</a></li>
+        <li><a href="wdress.html">Woman</a></li>
+        <li><a href="kdress.html">Kids</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger">&#9776;</div>
+</nav>
+
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <br>
+<p>Welcome to SwiftCart , your one-stop destination for 
+    quality products at unbeatable prices.</p>
+<br>
+<p>We believe shopping should be simple, enjoyable, and stress-free. That’s why we 
+carefully select every product in our store to ensure it meets our standards of quality, value, and reliability.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p><br>
+        <p>jane@example.com</p>
+        <a href="contact.html" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p><br>
+        <p>mike@example.com</p>
+        <a href="contact.html" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p><br>
+        <p>john@example.com</p>
+        <a href="contact.html" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ro">
+  <div class="col">
+    <h1>Our Story</h1>
+    <p>Our journey began with a simple mission — to make online shopping more 
+        trustworthy and accessible. Frustrated by overpriced products and slow service, 
+        we decided to create a platform that puts customers first.</p>
+  </div>
+  <div class="col">
+    <h1>Our Mission</h1>
+    <p>Our mission is to provide high-quality products at affordable prices while 
+        delivering an exceptional shopping experience.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h2 class="logo">SwiftCart</h2>
+      <p>We provide high quality services and solutions for your business.</p>
+      <p>We believe shopping should be simple, enjoyable, a0nd stress-free. That’s why we 
+carefully select every product in our store to ensure it meets our standards of quality, 
+value, and reliability.</p>
+    </div>
+
+    <div class="footer-section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="dropbtn">Services </a>
+        <ul>
+        <li><a href="t&sman.html">Man</a></li>
+        <li><a href="wdress.html">Woman</a></li>
+        <li><a href="kdress.html">Kids</a></li>
+        </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>Contact</h2><br>
+      <p>Email: swiftCart@shop.com</p><br>
+      <p>Phone: 0712-278345</p><br>
+      <p>Location: Pune Maharashtra</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 SwiftCart. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+<script>
+// Toggle mobile menu
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const dropdown = document.querySelector('.dropdown');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Toggle dropdown on mobile
+dropdown.addEventListener('click', () => {
+  if (window.innerWidth <= 768) {
+    dropdown.classList.toggle('active');
+  }
+});
+</script>
+</html>

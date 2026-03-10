@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>|| SwiftCart | Woman ||</title>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">SwiftCart</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Services </a>
+      <ul class="dropdown-menu">
+        <li><a href="t&sman.html">Man</a></li>
+        <li><a href="wdress.html">Woman</a></li>
+        <li><a href="kdress.html">Kids</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger">&#9776;</div>
+</nav>
+<header>
+    <h2>Woman Fashion</h2>
+    <div class="cart">
+        Cart: <span id="cart-count">0</span> | $<span id="cart-total">0</span>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="product">
+        <img src="dress1.jpg" alt="Product">
+        <h3>Product 1</h3>
+        <div class="price">$20</div>
+        <button onclick="addToCart(20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="dress2.jpg" alt="Product">
+        <h3>Product 2</h3>
+        <div class="price">$35</div>
+        <button onclick="addToCart(35)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="dress3.jpg" alt="Product">
+        <h3>Product 3</h3>
+        <div class="price">$50</div>
+        <button onclick="addToCart(50)">Add to Cart</button>
+    </div>
+</section>
+
+<section class="products">
+
+    <div class="product">
+        <img src="wtshirt1.jpg" alt="Product">
+        <h3>Product 4</h3>
+        <div class="price">$20</div>
+        <button onclick="addToCart(20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="wtshirt4.jpg" alt="Product">
+        <h3>Product 5</h3>
+        <div class="price">$35</div>
+        <button onclick="addToCart(35)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="wtshirt5.jpg" alt="Product">
+        <h3>Product 6</h3>
+        <div class="price">$50</div>
+        <button onclick="addToCart(50)">Add to Cart</button>
+    </div>
+</section>
+
+<section class="products">
+
+    <div class="product">
+        <img src="top1.jpg" alt="Product">
+        <h3>Product 7</h3>
+        <div class="price">$20</div>
+        <button onclick="addToCart(20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="top2.jpg" alt="Product">
+        <h3>Product 8</h3>
+        <div class="price">$35</div>
+        <button onclick="addToCart(35)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="top3.jpg" alt="Product">
+        <h3>Product 9</h3>
+        <div class="price">$50</div>
+        <button onclick="addToCart(50)">Add to Cart</button>
+    </div>
+</section>
+
+<section class="products">
+
+    <div class="product">
+        <img src="wshirt.jpg" alt="Product">
+        <h3>Product 10</h3>
+        <div class="price">$20</div>
+        <button onclick="addToCart(20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="wshirt3.jpg" alt="Product">
+        <h3>Product 11</h3>
+        <div class="price">$35</div>
+        <button onclick="addToCart(35)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="wshirt2.jpg" alt="Product">
+        <h3>Product 12</h3>
+        <div class="price">$50</div>
+        <button onclick="addToCart(50)">Add to Cart</button>
+    </div>
+</section>
+
+<section class="cart-section">
+    <h3>Shopping Cart Summary</h3>
+    <p>Total Items: <span id="summary-count">0</span></p>
+    <p>Total Price: $<span id="summary-total">0</span></p>
+</section>
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h2 class="logo">SwiftCart</h2>
+      <p>We provide high quality services and solutions for your business.</p>
+      <p>We believe shopping should be simple, enjoyable, a0nd stress-free. That’s why we 
+carefully select every product in our store to ensure it meets our standards of quality, 
+value, and reliability.</p>
+    </div>
+
+    <div class="footer-section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="dropbtn">Services </a>
+        <ul>
+        <li><a href="t&sman.html">Man</a></li>
+        <li><a href="wdress.html">Woman</a></li>
+        <li><a href="kdress.html">Kids</a></li>
+        </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>Contact</h2><br>
+      <p>Email: swiftCart@shop.com</p><br>
+      <p>Phone: 0712-278345</p><br>
+      <p>Location: Pune Maharashtra</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 SwiftCart. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+<script>
+// Toggle mobile menu
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const dropdown = document.querySelector('.dropdown');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Toggle dropdown on mobile
+dropdown.addEventListener('click', () => {
+  if (window.innerWidth <= 768) {
+    dropdown.classList.toggle('active');
+  }
+});
+</script>
+<script>
+    let count = 0;
+    let total = 0;
+
+    function addToCart(price) {
+        count++;
+        total += price;
+
+        document.getElementById("cart-count").innerText = count;
+        document.getElementById("cart-total").innerText = total;
+        document.getElementById("summary-count").innerText = count;
+        document.getElementById("summary-total").innerText = total;
+    }
+</script>
+</html>

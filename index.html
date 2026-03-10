@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>|| SwiftCart | Home ||</title>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">SwiftCart</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Services </a>
+      <ul class="dropdown-menu">
+        <li><a href="t&sman.html">Man</a></li>
+        <li><a href="wdress.html">Woman</a></li>
+        <li><a href="kdress.html">Kids</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger">&#9776;</div>
+</nav>
+
+    <section class="hero">
+  <div class="hero-content">
+    <h1>Elevate Your Everyday Style</h1>
+    <p>Discover premium products designed for comfort, durability, and modern living.</p>
+    <a class="btn" href="wdress.html">Shop Now</a>
+  </div>
+</section>
+
+    <!-- man seller -->
+<section class="section">
+  <h2>Best Sellers For Man</h2>
+  <div class="products">
+    <div class="product-card">
+<img src="tshirt.jpg" alt="Premium cotton T-shirt">
+      <h3>Shirt & T-Shirts</h3>
+      <p>$79.99</p>
+      <br>
+      <a href="t&sman.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="mshoes1.jpg" alt="">
+      <h3> Shoes</h3>
+      <p>$99.99</p><br>
+      <a href="mshoes.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="watch2.jpg" alt="">
+      <h3>Watches</h3>
+      <p>$149.99</p><br>
+      <a href="mWatch.html" class="btn">Add to Cart</a>
+    </div>
+  </div>
+</section>
+
+<!-- woman seller -->
+ <section class="section">
+  <h2>Best Sellers For Woman</h2>
+  <div class="products">
+    <div class="product-card">
+<img src="dress.jpg" alt="">
+      <h3>Short Dress</h3>
+      <p>$79.99</p><br>
+      <a href="wdress.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="wShoes.jpg" alt="">
+      <h3>Hills</h3>
+      <p>$99.99</p><br>
+      <a href="whills.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="wWatch1.jpg" alt="">
+      <h3>Hand Watch</h3>
+      <p>$149.99</p><br>
+      <a href="wWatch.html" class="btn">Add to Cart</a>
+    </div>
+  </div>
+</section>
+
+<!-- Kids -->
+ <section class="section">
+  <h2>Best Sellers For Kids</h2>
+  <div class="products">
+    <div class="product-card">
+<img src="kids.jpg" alt="">
+      <h3> Dress</h3>
+      <p>$79.99</p><br>
+      <a href="kdress.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="shoes.jpg" alt="">
+      <h3>Shoes</h3>
+      <p>$99.99</p><br>
+      <a href="kshoes.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="toy1.jpg" alt="">
+      <h3>Toys</h3>
+      <p>$149.99</p><br>
+      <a href="ktoy.html" class="btn">Add to Cart</a>
+    </div>
+  </div>
+</section>
+
+<section class="section1">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐
+    <p>"Amazing quality and fast delivery!"</p>
+    <strong>- Sarah M.</strong>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <h2 class="logo">SwiftCart</h2>
+      <p>We provide high quality services and solutions for your business.</p>
+      <p>We believe shopping should be simple, enjoyable, a0nd stress-free. That’s why we 
+carefully select every product in our store to ensure it meets our standards of quality, 
+value, and reliability.</p>
+    </div>
+
+    <div class="footer-section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="dropbtn">Services </a>
+        <ul>
+        <li><a href="t&sman.html">Man</a></li>
+        <li><a href="wdress.html">Woman</a></li>
+        <li><a href="kdress.html">Kids</a></li>
+        </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>Contact</h2><br>
+      <p>Email: swiftCart@shop.com</p><br>
+      <p>Phone: 0712-278345</p><br>
+      <p>Location: Pune Maharashtra</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 SwiftCart. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+<script>
+// Toggle mobile menu
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const dropdown = document.querySelector('.dropdown');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Toggle dropdown on mobile
+dropdown.addEventListener('click', () => {
+  if (window.innerWidth <= 768) {
+    dropdown.classList.toggle('active');
+  }
+});
+</script>
+</html>
